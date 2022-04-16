@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pedroservio.workshopmongo.domain.User.User;
+import com.pedroservio.workshopmongo.domain.User;
 import com.pedroservio.workshopmongo.dto.UserDTO;
 import com.pedroservio.workshopmongo.repository.UserRepository;
 import com.pedroservio.workshopmongo.services.exception.ObjectNotFoundException;
@@ -27,7 +27,7 @@ public class UserService {
 	}
 	
 	public User insert(User obj) {
-		return repo.insert(obj);
+		return repo.save(obj);
 	}
 	
 	public void delete(String id) {

@@ -1,4 +1,4 @@
-package com.pedroservio.workshopmongo.domain.User;
+package com.pedroservio.workshopmongo.domain;
 
 import java.io.Serializable;
 import java.util.Objects;
